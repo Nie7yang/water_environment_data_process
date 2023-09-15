@@ -28,8 +28,10 @@ start_processing = False
 error_list =[]
 # Star
 for site_code in site_codes:
-    if site_code == '0111520':
+    if site_code == '3510520':
         start_processing = True
+    if site_code == '3530400':
+        start_processing = False
     if start_processing:
         for year in years:
             zettaicode=site_code
